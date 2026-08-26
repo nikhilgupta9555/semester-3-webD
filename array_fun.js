@@ -91,10 +91,21 @@
 // setTimeout(greet,5000,"nikhil","gupta");
 
 
-function displayNumbers(numbers)
-{
-    console.log(numbers);
-}
+// function displayNumbers(numbers)
+// {
+//     console.log(numbers);
+// }
 
-let arr=[12,20,30,45,50];
-displayNumbers(arr);
+// let arr=[12,20,30,45,50];
+// displayNumbers(arr);
+
+
+const fs = require('node:fs');
+try{
+    const content = 'this is written sychronously';
+    fs.writeFileSync('output.txt',content,'utf8');
+    console.log('file written successfully'); 
+}  
+catch(err){
+    console.error(err);
+}
