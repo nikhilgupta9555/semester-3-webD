@@ -2,9 +2,9 @@
 const getpromise = (id) => {
    return new Promise((resolve, reject) => {
       console.log(" hello nikhil", id);
-      // resolve(id);
-      reject(id);
-   });
+      resolve(id);
+      // reject(id);
+   }); 
 };
 let promise = getpromise(123);
 promise.then (() => {
